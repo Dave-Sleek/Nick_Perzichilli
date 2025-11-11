@@ -632,12 +632,12 @@ p {
     font-weight: 500;
 }
 
-/* Text Content */
+/* Text Content - REMOVED text-align: justify */
 .about-description {
     font-size: 1.125rem;
     color: var(--text-secondary);
     margin-bottom: var(--space-lg);
-    line-height: 1.7;
+    line-height: 1.7; /* Fixed line-height to 1.7 for better readability */
 }
 
 .about-description strong {
@@ -725,7 +725,7 @@ p {
     }
     
     .image-container {
-        max-width: 850px;
+        max-width: 450px; /* Fixed from 850px to reasonable size */
     }
     
     .about-description {
@@ -787,7 +787,7 @@ p {
     
     .about-description {
         font-size: 1.05rem;
-        text-align: left;
+        text-align: left; /* Left aligned for mobile */
         line-height: 1.6;
     }
     
@@ -1715,11 +1715,11 @@ textarea:focus-visible {
     font-size: 1.25rem;
     color: var(--text-secondary);
     margin-bottom: var(--space-lg);
-    line-height: 1.7;
+    line-height: 1.3;
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 0.8s ease 0.4s forwards;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 .about-description:last-of-type {
@@ -2302,4 +2302,16 @@ textarea:focus-visible {
     .home-cta {
         animation-duration: 0.8s; /* Slightly faster on mobile */
     }
+}
+
+/* Optional: Special styling for Men's Journal icon */
+.social-card:nth-child(1) .social-icon {
+    background: rgba(200, 16, 46, 0.1);
+    border-radius: var(--radius-lg);
+    padding: var(--space-sm);
+}
+
+/* Men's Journal brand color */
+.mens-journal-color {
+    color: #c8102e;
 }
