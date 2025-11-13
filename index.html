@@ -608,29 +608,32 @@
             <div class="contact-content">
                 <div class="contact-form">
                     <h3 class="form-title">Send Me a Message</h3>
-                    <form id="contact-form" action="https://formspree.io/f/xyzlzyba" method="POST" class="form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="text" id="name" name="name" class="form-input" required>
-                                <label for="name" class="form-label">Your Name</label>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" id="email" name="email" class="form-input" required>
-                                <label for="email" class="form-label">Your Email</label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" class="form-input" required>
-                            <label for="subject" class="form-label">Subject</label>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" class="form-input form-textarea" required></textarea>
-                            <label for="message" class="form-label">Your Message</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full">
-                            <span>Send Message</span>
-                        </button>
-                    </form>
+                    <form id="contact-form" class="form" action="https://formspree.io/f/xyzlzyba" method="POST">
+                    <!-- Email first -->
+                    <div class="form-group">
+                    <input type="email" id="email" name="email" class="form-input" required>
+                    <label for="email" class="form-label">Your Email</label>
+                    </div>
+
+                    <div class="form-group">
+                    <input type="text" id="name" name="name" class="form-input" required>
+                    <label for="name" class="form-label">Your Name</label>
+                    </div>
+
+                    <div class="form-group">
+                    <input type="text" id="subject" name="subject" class="form-input" required>
+                    <label for="subject" class="form-label">Subject</label>
+                    </div>
+
+                    <div class="form-group">
+                    <textarea id="message" name="message" class="form-input form-textarea" required></textarea>
+                    <label for="message" class="form-label">Your Message</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full">
+                    <span>Send Message</span>
+                    </button>
+                </form>
                 </div>
                 <div class="contact-info">
                     <h3 class="contact-info-title">Contact Information</h3>
